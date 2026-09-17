@@ -150,5 +150,28 @@
             if (row) row.remove();
         }
     </script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzY6tpDNKGDZxRTn8KNk0gHTiTTvv-x1s",
+    authDomain: "student-management-syste-9498d.firebaseapp.com",
+    projectId: "student-management-syste-9498d",
+    storageBucket: "student-management-syste-9498d.firebasestorage.app",
+    messagingSenderId: "433747294105",
+    appId: "1:433747294105:web:c3a97ad43b79a4312ec508",
+    measurementId: "G-ESQQY7M6RM"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
